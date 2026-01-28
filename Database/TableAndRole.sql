@@ -158,3 +158,36 @@ INSERT INTO roles (id, name) VALUES
 ('ROLE_MANAGER', 'Manager'),
 ('ROLE_ADMIN', 'Admin');
 
+INSERT INTO users (id, name, email, password_hash, status)
+VALUES
+-- Admin
+('USER_20260128_ad01', 'Admin User',
+ 'admin@system.com',
+ '$2a$11$C6UzMDM.H6dfI/f/IKcEeOXbGZL1Qp1z0p6sZ3Q5Z6sZ6Z6Z6Z6',
+ 'ACTIVE'),
+
+-- Manager
+('USER_20260128_mg02', 'Manager User',
+ 'manager@system.com',
+ '$2a$11$C6UzMDM.H6dfI/f/IKcEeOXbGZL1Qp1z0p6sZ3Q5Z6sZ6Z6Z6Z6',
+ 'ACTIVE'),
+
+-- Franchise Store Staff
+('USER_20260128_fs03', 'Franchise Staff',
+ 'franchise@store.com',
+ '$2a$11$C6UzMDM.H6dfI/f/IKcEeOXbGZL1Qp1z0p6sZ3Q5Z6sZ6Z6Z6Z6',
+ 'ACTIVE'),
+
+-- Central Kitchen Staff
+('USER_20260128_ks04', 'Kitchen Staff',
+ 'kitchen@central.com',
+ '$2a$11$C6UzMDM.H6dfI/f/IKcEeOXbGZL1Qp1z0p6sZ3Q5Z6sZ6Z6Z6Z6',
+ 'ACTIVE'),
+
+-- Supply Coordinator
+('USER_20260128_sc05', 'Supply Coordinator',
+ 'supply@system.com',
+ '$2a$11$C6UzMDM.H6dfI/f/IKcEeOXbGZL1Qp1z0p6sZ3Q5Z6sZ6Z6Z6Z6',
+ 'ACTIVE');
+
+
